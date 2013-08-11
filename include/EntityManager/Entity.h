@@ -19,6 +19,12 @@ public:
     Entity();
     Entity(const std::string&);
 
+    // set the entity's id, function made as an lvalue inlines
+    std::string &ID()
+    {
+        return id;
+    }
+
     std::string getDesc();
     void setDesc(const std::string&);
 
